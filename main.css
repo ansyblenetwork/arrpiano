@@ -2,6 +2,10 @@
   --fixWidth: 0px;
 }
 
+.fb-comments {
+	margin:auto;
+}
+
 iframe {
   position: absolute;
   top: 0;
@@ -145,6 +149,9 @@ input[type=number] {
   max-width:920px;
   width: calc(100% - 330px);
   overflow:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
 }
 
 .media {
