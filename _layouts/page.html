@@ -57,14 +57,12 @@
 </body>	
 
 <script>
+	
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
 	mobile = true;		
-	D('main').onclick = function() { D('outersidebar').scrollTo({
-	  top: 0,
-	  left: 1000,
-	  behavior: 'smooth'}); };
+	D('main').onclick = function() { D('outersidebar').scrollTo({top: 0, left: 1000, behavior: 'smooth'}); };
 }
 else {				
 	window.addEventListener("resize", resizeFunction);
@@ -77,10 +75,8 @@ else {
 		D("main").style.width = `calc(100% - ${w}px - 20px)`;
 	}  
 }
-
 	
-var images = document.getElementsByTagName("img");
-	
+var images = document.getElementsByTagName("img");	
 for (let i = 0; i < images.length; i++) {
 	if (images[i].title) {		
 		let caption = document.createElement("div");
@@ -93,14 +89,12 @@ for (let i = 0; i < images.length; i++) {
 	
 var ytString = [];
 let holder = [];	
-	
 var tag = make('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	
 var ytRegex = /^.*(youtu\.be\/|vi?\/|u\/\w\/|embed\/|\?vi?=|\&vi?=)([^#\&\?]*).*/;	
-	
 var list = document.getElementsByTagName("a");
 for (let i = 0; i < list.length; i++) {
 	var match = list[i].href.match(ytRegex);
@@ -147,30 +141,28 @@ for (let i = 0; i < list.length; i++) {
 			let myBut = make("button");
 			hide(myBut);
 			let player = new YT.Player(`player${i}`, {
-					playerVars: { 'modestbranding': 1},
-					videoId: ytString[i],
-					events: {
-						onReady: function() { show(myBut); },
-					}
+				playerVars: { 'modestbranding': 1},
+				videoId: ytString[i],
+				events: {
+					onReady: function() { show(myBut); },
+				}
 			});	
 		}
 	}
 }
 	
-function D(string) { return document.getElementById(string); }		
+function D(string) { return document.getElementById(string); }	
+function DE(id) {
+	if (typeof id === 'string' || id instanceof String) return D(id);
+	else return id;	
+}
+function show(id) { DE(id).style.display = 'inline';}	
+function hide(id) { DE(id).style.display = 'none';}
 	
 function make(string, myClass) { 
 	let myObj = document.createElement(string);
 	if (myClass) myObj.classList.add(myClass);
 	return myObj;
-}
-	
-function show(id) { DE(id).style.display = 'inline';}
-	
-function hide(id) { DE(id).style.display = 'none';}
-	function DE(id) {
-	if (typeof id === 'string' || id instanceof String) return D(id);
-	else return id;	
 }
 	
 window.onload = function() {
