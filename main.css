@@ -4,6 +4,7 @@
 
 .fb-comments {
 	margin:auto;
+	margin-bottom:30px;
 }
 
 iframe {
@@ -95,6 +96,7 @@ input[type=number] {
 
 .contentHolder {
   padding:15px;
+	margin-bottom:30px;
 }
 
 .sidebar {
