@@ -5,6 +5,7 @@
 .fb-comments {
 	margin:auto;
 	margin-bottom:30px;
+	width:85%;
 }
 
 iframe {
@@ -377,5 +378,10 @@ ul::-webkit-scrollbar-thumb:hover {
   	scrollbar-width: none;
 }  
 
+.fb-comments {
+	margin:auto;
+	margin-bottom:30px;
+	width:100%;
+}
 	  
 }
