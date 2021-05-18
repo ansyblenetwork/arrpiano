@@ -366,7 +366,6 @@ ul::-webkit-scrollbar-thumb:hover {
     
   .contentHolder {	  
      padding:0px;
-     min-height:125vh;
   }
 
   ::-webkit-scrollbar {
