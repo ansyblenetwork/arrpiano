@@ -314,6 +314,7 @@ ul::-webkit-scrollbar-thumb:hover {
 	  
   box-sizing:border-box; 
 	  
+	display:block;	  
   }
 	  
    .outersidebar{
