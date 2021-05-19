@@ -69,7 +69,7 @@ var relativelinks = document.getElementsByTagName("a");
 let baseURL = "/" + window.location.pathname.split('/')[1];
 	
 for (let i = 0; i < relativelinks.length; i++) {
-	if (relativelinks[i].href.splice(0, 3) == "/20") {	
+	if (relativelinks[i].href.slice(0, 3) == "/20") {	
 		relativelinks[i].href = baseURL + relativelinks[i].href;
 	}
 }
