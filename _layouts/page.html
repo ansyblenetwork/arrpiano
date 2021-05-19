@@ -67,12 +67,18 @@ D('comment').outerHTML = `<div id="comment" class="fb-comments" data-href="${win
 
 var relativelinks = document.getElementsByTagName("a");
 let baseURL = "/" + window.location.pathname.split('/')[1];
-	
-for (let i = 0; i < relativelinks.length; i++) {
-	if (relativelinks[i].pathname.slice(0, 3) == "/20") {	
-		relativelinks[i].pathname = baseURL + relativelinks[i].pathname;
+
+if (baseURL.slice(0, 3) != "/20") {
+	for (let i = 0; i < relativelinks.length; i++) {
+		if (relativelinks[i].pathname.slice(0, 3) == "/20") {	
+			relativelinks[i].pathname = baseURL + relativelinks[i].pathname;
+		}
 	}
 }
+	
+var accountName = window.location.host.split('.')[0];
+var subURL = window.location.pathname.split('/');
+let repoURL = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${subURL.join('-')}.md`;
 	
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
