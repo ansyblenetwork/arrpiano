@@ -308,6 +308,7 @@ ul::-webkit-scrollbar-thumb:hover {
     position: fixed;
     margin-left: 0px;
     padding-left:20px;
+    padding-right:20px;
     width: 100vw;
     height: 100%;
     overflow:auto;
