@@ -128,6 +128,7 @@ for (let i = 0; i < list.length; i++) {
 	if (match && match[2].length == 11) {
 		ytString[i] = match[2];
 		holder[i] = make("div");
+		holder[i].classList.add('videoWrapWrap');
 		if (list[i].nextElementSibling) list[i].nextElementSibling.parentNode.insertBefore(holder[i], list[i].nextElementSibling);
 		else list[i].parentNode.appendChild(holder[i]);
 		
@@ -146,7 +147,6 @@ for (let i = 0; i < list.length; i++) {
 			remove(myPreBut.parentNode);
 			
 			// outer to inner Youtube divs (3 layers)
-			holder[i].classList.add('videoWrapWrap');
 			let wrapOne = make('div', 'mediaVideoWrapper');
 				wrapOne.innerHTML = `<svg class='placeholder-svg' height="100%" width="100%" viewBox="0 0 1600 900" style='stroke-width: 0px; background-color: black;'></svg>`;
 			let theVideo = make('div');
