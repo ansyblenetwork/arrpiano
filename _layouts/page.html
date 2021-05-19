@@ -63,11 +63,12 @@
 </body>	
 
 <script>
+// facebook comments
 D('comment').outerHTML = `<div id="comment" class="fb-comments" data-href="${window.location.href}" data-width="100%" data-numposts="10"></div>`;
 
+// add base URL to relative links (for project pages)
 var relativelinks = document.getElementsByTagName("a");
 let baseURL = "/" + window.location.pathname.split('/')[1];
-
 if (baseURL.slice(0, 3) != "/20") {
 	for (let i = 0; i < relativelinks.length; i++) {
 		if (relativelinks[i].pathname.slice(0, 3) == "/20") {	
@@ -75,11 +76,13 @@ if (baseURL.slice(0, 3) != "/20") {
 		}
 	}
 }
-	
+
+// add link to github repository
 var accountName = window.location.host.split('.')[0];
 var filename = window.location.pathname.split('/').slice(2).join('-');
 D('repoLink').href = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${filename}.md`;
-	
+
+// adjust display for mobile vs desktop
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
 if (screen.width <= 550 || screen.height <= 550) {
@@ -97,7 +100,8 @@ else {
 		D("main").style.width = `calc(100% - ${w}px - 40px)`;
 	}  
 }
-	
+
+// add captions to images
 var images = document.getElementsByTagName("img");	
 for (let i = 0; i < images.length; i++) {
 	if (images[i].title) {		
@@ -109,6 +113,7 @@ for (let i = 0; i < images.length; i++) {
 	}
 }
 	
+// Youtube embedding
 var ytString = [];
 let holder = [];	
 var tag = make('script');
@@ -122,11 +127,11 @@ for (let i = 0; i < list.length; i++) {
 	var match = list[i].href.match(ytRegex);
 	if (match && match[2].length == 11) {
 		ytString[i] = match[2];
-		holder[i] = document.createElement("div");
+		holder[i] = make("div");
 		if (list[i].nextElementSibling) list[i].nextElementSibling.parentNode.insertBefore(holder[i], list[i].nextElementSibling);
 		else list[i].parentNode.appendChild(holder[i]);
 		
-		// holder[i].appendChild(make("br"));		
+		// the embed button
 		let myPreBut = make("button");
 		myPreBut.textContent = "Embedded player";
 		let placeHolder = make("div");		
@@ -134,7 +139,26 @@ for (let i = 0; i < list.length; i++) {
 		placeHolder.style.margin = "16px";
 		placeHolder.appendChild(myPreBut);
 		holder[i].appendChild(placeHolder);
-		
+
+		myPreBut.onclick = function() {
+			// remove the embed button
+			function remove(element) { element.parentNode.removeChild(element);}
+			remove(myPreBut.parentNode);
+			
+			// outer Youtube div
+			let tempdiv = makeDiv(holder[i]);
+			tempdiv.style.paddingTop = "0.75em";
+			tempdiv.firstChild.style.display = "block";
+
+			// Youtube video
+			let theVideo = make('div');
+			theVideo.id = `player${i}`;
+			tempdiv.firstChild.appendChild(theVideo);
+			let player = new YT.Player(`player${i}`, {
+				playerVars: { 'modestbranding': 1},
+				videoId: ytString[i],
+			});	
+		}
 		function makeDiv(li) {		
 			let tempdiv = make('div', 'videoWrapWrap');
 
@@ -146,29 +170,6 @@ for (let i = 0; i < list.length; i++) {
 			li.appendChild(tempdiv);
 
 			return tempdiv;
-		}
-
-		myPreBut.onclick = function() {
-			
-			function remove(element) { element.parentNode.removeChild(element);}
-			remove(myPreBut.parentNode);
-			let tempdiv = makeDiv(holder[i]);
-			tempdiv.style.paddingTop = "0.75em";
-			tempdiv.firstChild.style.display = "block";
-
-			let theVideo = make('div');
-			theVideo.id = `player${i}`;
-			tempdiv.firstChild.appendChild(theVideo);
-
-			let myBut = make("button");
-			hide(myBut);
-			let player = new YT.Player(`player${i}`, {
-				playerVars: { 'modestbranding': 1},
-				videoId: ytString[i],
-				events: {
-					onReady: function() { show(myBut); },
-				}
-			});	
 		}
 	}
 }
