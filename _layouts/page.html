@@ -33,7 +33,7 @@
 		<ul class="ulsidebar" id="postlist" style="overflow:auto;">
 			{% for post in site.posts %}					
 				{% if page.title == post.title %}	
-					<li id="specialPost" style="background-color:#f4f7f7"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
+					<li id="specialPost" style="background-color:#f4f7f7"><span class="date-format"><a id="repLink">{{ post.date | date: "%B %-d, %Y" }}</a></span><br>
 						{{ post.title }}</li>
 				{% else %}				
 					<a href="{{ post.url | relative_url }}"><li><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
@@ -78,7 +78,7 @@ if (baseURL.slice(0, 3) != "/20") {
 	
 var accountName = window.location.host.split('.')[0];
 var filename = window.location.pathname.split('/').slice(2).join('-');
-let repoURL = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${filename}.md`;
+D('repoLink').href = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${filename}.md`;
 	
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
