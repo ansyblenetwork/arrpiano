@@ -77,8 +77,8 @@ if (baseURL.slice(0, 3) != "/20") {
 }
 	
 var accountName = window.location.host.split('.')[0];
-var subURL = window.location.pathname.split('/');
-let repoURL = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${subURL.join('-')}.md`;
+var filename = window.location.pathname.split('/').splice(1, -1).join('-').slice(0, -1);
+let repoURL = `https://github.com/${accountName}${baseURL}/blob/main/_posts/${filename}.md`;
 	
 var mobile = false;
 if(D('specialPost')) D('specialPost').scrollIntoView({behavior: "auto", block: "center", inline: "nearest"}); 
