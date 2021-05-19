@@ -1,5 +1,6 @@
 name: Arrangements for Solo Piano
 baseurl: solopiano
+excerpt_separator: "\n\n\n"
 
 permalink: /:year/:month/:day/:title
 plugins:
