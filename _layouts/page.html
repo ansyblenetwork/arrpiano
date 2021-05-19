@@ -145,31 +145,20 @@ for (let i = 0; i < list.length; i++) {
 			function remove(element) { element.parentNode.removeChild(element);}
 			remove(myPreBut.parentNode);
 			
-			// outer Youtube div
-			let tempdiv = makeDiv(holder[i]);
-			tempdiv.style.paddingTop = "0.75em";
-			tempdiv.firstChild.style.display = "block";
+			// outer to inner Youtube divs (3 layers)
+			holder[i].classList.add('videoWrapWrap');
+			let wrapOne = make('div', 'mediaVideoWrapper');
+				wrapOne.innerHTML = `<svg class='placeholder-svg' height="100%" width="100%" viewBox="0 0 1600 900" style='stroke-width: 0px; background-color: black;'></svg>`;
+			let theVideo = make('div');
+				theVideo.id = `player${i}`;		
+			wrapOne.appendChild(theVideo);
+			holder[i].appendChild(wrapOne);
 
 			// Youtube video
-			let theVideo = make('div');
-			theVideo.id = `player${i}`;
-			tempdiv.firstChild.appendChild(theVideo);
 			let player = new YT.Player(`player${i}`, {
 				playerVars: { 'modestbranding': 1},
 				videoId: ytString[i],
 			});	
-		}
-		function makeDiv(li) {		
-			let tempdiv = make('div', 'videoWrapWrap');
-
-			let wrapOne = make('div', 'mediaVideoWrapper');
-			wrapOne.innerHTML = `<svg class='placeholder-svg' height="100%" width="100%" viewBox="0 0 1600 900" style='stroke-width: 0px; background-color: black;'></svg>`;
-			hide(wrapOne);
-
-			tempdiv.appendChild(wrapOne);
-			li.appendChild(tempdiv);
-
-			return tempdiv;
 		}
 	}
 }
