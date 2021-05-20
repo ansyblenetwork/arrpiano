@@ -24,7 +24,7 @@ In the spirit of my [recent commentary]({% post_url 2021-05-19-music-and-mathema
 
 The short answer to the first question is that _consonances_ are distinguished and rare. This is already somewhat evident within the twelve notes: Slamming the keys on a piano is more likely than not to produce some dissonant sounds. Having fewer notes helps control the dissonances. Blowing arbitrarily into say, a harmonica, typically doesn't sound so unpleasant, because there are fewer "open notes."
 
-The answer to the second question is, I think, more subtle. My short answer would be that it is related to _symmetry_. By a quirk of arithmetic, having only say, two or some other small number of consonant notes would result in an asymmetric and scattered arsenal of pitches. In fact, insisting on a truly symmetric set of consonant notes is untenable: It would require the set to have infinitely many notes (or just one). 
+The answer to the second question is, I think, more subtle. My short answer would be that it is related to _symmetry_. By a quirk of the arithmetic involved with consonance, having only say, two or some other small number of consonant notes yields an asymmetric and scattered arsenal of pitches. In fact, insisting on a truly symmetric set of consonant notes is untenable: It would require the set to have infinitely many notes (or just one). 
 
 We will see that by imposing some reasonable compromises, we find ourselves with twelve notes.
 
