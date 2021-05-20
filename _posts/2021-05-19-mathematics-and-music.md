@@ -10,6 +10,7 @@ I think music has a special mystery, particularly to those who have studied some
 <p>And even though I can only in my dream aspire to do that kind of work, I understand what it is. But Bach, I don’t. That’s the thing. In other words, it’s not just that I’m not gifted enough or something; it’s another dimension. It’s like if I met somebody from a different planet. And it’s a paradox, because I think Bach is the most human of composers. So obviously, there’s a contradiction there. How can he be both the most human, and be completely out of this world?</p>
 </div>
 
+
 Mathematics, or more precisely, its practice, has a particular and very democratic property: The worst mathematician is not fundamentally different from the greatest. There is value in understanding mathematics whether or not you enjoy it, and the bulk of this value can be realized whether or not you are good at it. This is because the primary object of mathematics is the reasoning itself, distilling some product out of knowledge, short term memory, hard deduction, and soft induction - abilities that define a living, thinking human.
 
 Contrast this with other pursuits, where the primary objectives include speed, strength, knowledge, and success. A slow sprinter has little value; a chess player who always loses is not interesting. A ranking of mathematicians might also use these measures, but they are secondary.
