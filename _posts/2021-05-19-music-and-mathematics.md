@@ -1,5 +1,5 @@
 ---
-title: "Mathematics and music"
+title: "Music and mathematics"
 ---
 
 I think music has a special mystery, particularly to those who have studied some college mathematics. In an interview with Krista Tippett for the podcast _On Being_, Professor Chazelle at Princeton briefly described how Bach created something different:
