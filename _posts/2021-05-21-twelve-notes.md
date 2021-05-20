@@ -14,3 +14,16 @@ Today's quote of the day comes from Richard Feynman:
 </div>
 
 So let's look at the notes of music. Why are there twelve notes in Western and modern music?
+
+
+
+In the spirit of my [recent commentary]({% post_url 2021-05-19-music-and-mathematics %}) on taking a systematic approach, we first observe that this can be decomposed into two questions:
+
+1. Why are there not more than twelve notes?
+2. Why are there not fewer than twelve notes?
+
+The short answer to the first question is that _consonances_ are distinguished and rare. This is already somewhat evident within the twelve notes: Slamming the keys on a piano is more likely than not to produce some dissonant sounds. Having fewer notes helps control the dissonances: Blowing arbitrarily into say, a harmonica, typically doesn't sound so unpleasant, because there are fewer "open notes."
+
+The answer to the second question is, I think, more subtle. My short answer would be that it is related to _variety_, _symmetry_ and _continuity_. Variety refers to the obvious fact that music should use more than one note. But by a quirk of arithmetic, having say only two consonant notes would result in an asymmetric and disjointed arsenal of pitches. We will see that by imposing some reasonable requirements, we find ourselves with twelve notes.
+
+### Consonances
