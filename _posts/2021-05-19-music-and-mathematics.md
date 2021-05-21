@@ -2,7 +2,7 @@
 title: "Music and mathematics"
 ---
 
-I think music has a special mystery, particularly to those who have studied some college mathematics. In an interview with Krista Tippett for the podcast _On Being_, Professor Chazelle at Princeton briefly described how Bach created something different:
+I think music has a special mystery, particularly to those who have studied some mathematics in college. In an interview with Krista Tippett for the podcast _On Being_, Professor Chazelle briefly described how Bach created something different:
 
 <div class="media">
 <p>It’s hard to explain, because I work in mathematics mostly, and I have great admiration for all kinds of mathematicians, like the true geniuses of history. And even though I can only in my dream aspire to do that kind of work, I understand what it is. </p>
