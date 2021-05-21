@@ -38,7 +38,7 @@ However, it turns out that for the purpose of constructing the twelve notes, we 
 
 Music consists of a sequence of notes. Due to _octave equivalence_, it would not be very interesting to restrict ourselves to only octaves. But it also wouldn't be very interesting to restrict ourselves to adding just the one note that forms a perfect fifth with our starting note. This is because the new note too would like the option of having somewhere to go - preferably to another consonant but interesting relative perfect fifth. But we see that taking powers of three will never yield a power of two, so this cycle of taking perfect fifths will never bring us to an octave equivalent of our starting note.
 
-The resolution to this is essentially to stop this _circle of fifths_ when the spread of our notes (and their octave equivalents) has become sufficiently even. It turns out that this happens after generating twelve notes, because 3^12 = 531441 is approximately 2^19 = 524288. The human ear is only barely refined enough to detect the difference between the ratio of these two numbers and 1. The approximation can be made almost imperceptible after applying an appropriate _temperament_, which we discuss next.
+The resolution to this is essentially to stop this _circle of fifths_ when the spread of our notes (and their octave equivalents) has become sufficiently even. It turns out that this happens after generating twelve notes, because 3^12 = 531441 is approximately 2^19 = 524288. The human ear is only barely refined enough to detect the difference between the ratio of these two numbers and 1. Furthermore, the approximation can be made almost imperceptible after applying an appropriate _temperament_, which we discuss next.
 
 ### Temperament
 
