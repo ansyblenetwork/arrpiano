@@ -44,6 +44,6 @@ The resolution to this is essentially to stop this _circle of fifths_ when the s
 
 One can imagine constructing the keys of a piano by cycling through the fifths as described until all twelve notes have been generated, and then completing the rest of the piano by simply extending by octaves. For instance, starting with C, we would end with F.
 
-Almost every fifth on the piano would be exact and beautiful. However, the perfect fifth extending from F to C would not have been constructed deliberately, but instead rely on the approximation of 3^12 by 2^19 discussed previously. (Other consonances which we have not discussed - notably the important major third corresponding to a 5/4 frequency ratio - would also suffer.) This approach is known as _Pythagorean tuning_.
+Almost every fifth on the piano would be exact and beautiful. However, the final perfect fifth (extending from F to C) would not have been deliberated during the construction, but instead arise from the approximation of 3^12 by 2^19 discussed previously. (Other consonances which we have not discussed - notably the important major third corresponding to a 5/4 frequency ratio - would also suffer.) This approach is known as _Pythagorean tuning_.
 
 When musicians and composers started more frequently employing modulation (and I suspect as pitch-inflexiable keyboard instruments grew more popular), _equal temperament_ was introduced. This approach evenly shares the approximation error across all twelve notes, making it almost imperceptible.
