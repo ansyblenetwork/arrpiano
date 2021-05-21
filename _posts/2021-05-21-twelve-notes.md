@@ -32,7 +32,7 @@ We will see that by imposing some reasonable compromises, we find ourselves with
 
 Humans distinguish different sound frequencies through pitches, with higher frequencies corresponding to higher pitches. Conventional musical wisdom says that simpler ratios of frequencies correspond to more consonant intervals of pitches. There is some ambiguity as to what "simple" means in this context, and in fact there is some subjective disagreement as to which intervals are more consonant than others.
 
-However, it turns out that for the purpose of constructing the twelve notes, we needn't worry about subtle gradations of consonance yet. We will see that doubling and tripling (or alternatively, halving and trisecting) frequencies already suffices to justify using twelve notes. There is essentially universal agreement that the corresponding intervals are the most consonant. In fact, doubling a frequency corresponds to raising by an octave, while tripling a frequency corresponds to raising by a perfect fifth (actually, an octave followed by a perfect fifth; a perfect fifth corresponds to a 3/2 frequency ratio).
+However, it turns out that for the purpose of constructing the twelve notes, we needn't worry about subtle gradations of consonance yet. There is essentially universal agreement that intervals corresponding to frequency doubling and tripling (or alternatively, halving and trisecting) are the most consonant. In fact, doubling a frequency corresponds to raising by an octave, while tripling a frequency corresponds to raising by a perfect fifth. We will see that using these ratios already suffices to justify using twelve notes. 
 
 ### Symmetry
 
