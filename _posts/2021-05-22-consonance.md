@@ -9,14 +9,3 @@ Today's quote of the day comes from the introduction of Paul Hindemith's _The Cr
 </div>
 
 Although the twelve notes can be [discovered and justified]({% post_url 2021-05-21-twelve-notes %}) by seeking perfect fifths (and octaves) alone, one can ask about relationships between non-adjacent notes - those which are not separated by a perfect fifth.
-
-> Here's an attempt at a quote.
->
-> Here's a second line
-
-Herels a ine after the quote
-
-> Here's another quote.
-> Here's a line with no new space
-
-> Here's a second line.
