@@ -1,5 +1,5 @@
 ---
-title: "Music as a mathematician"
+title: "Music, our mutual friend"
 ---
 
 I think music has a special mystery, particularly to those who have studied some mathematics in college. In an interview with Krista Tippett for the podcast _On Being_, Professor Chazelle briefly described how Bach created something different:
@@ -19,6 +19,6 @@ There is another side to the hubris, which is the belief that there is nothing m
 
 But then there is music. Music doesn't seem quite like other scientific or even pseudoscientific disciplines, like physics, biology, and social science, which all have the luxury of being grounded as models for different aspects of reality. But I am also reluctant to dismiss music as merely a subjective or technical art. There is something universal about music, and this universality is evidence of some underlying principles.
 
-I don't feel young anymore, as measured by the number of encounters which pique my attention. Mathematicians age quickly. I have been putting off for some time now this attempt to "resolve music" for myself. How could it end well? Either in failure, or in the dissolution of one of the last things that still inspires my curiosity. I am reminded of the character Desmond Hume's copy of _Our Mutual Friend_, the last novel of Dickens that he had yet to read, stowed away in his effects for a time of need.
+I don't feel young anymore, as measured by the number of encounters which pique my attention. Mathematicians age quickly. I have been putting off for some time now this attempt to "resolve music" for myself. I am reminded of the character Desmond Hume's copy of _Our Mutual Friend_, the last novel of Dickens that he had yet to read, stowed away in his effects for a time of need. 
 
-Chazelle and I - I suspect we might simply be inadequately trained in the theory. What we see might be like a magic trick: Unaware of the outsized preparation that the performer goes to great lengths to conceal, we feel we are witnessing something wonderful. Unlike with a magical performance however, I hope the wonder persists beyond the revelation.
+How could this end well? Either in failure, or in the dissolution of one of the last things that still inspires my curiosity. Chazelle and I - I suspect we might simply be inadequately trained in the theory. What we see might be like a magic trick: Unaware of the outsized preparation that the performer goes to great lengths to conceal, we feel we are witnessing something wonderful. Unlike with a magical performance however, I hope the wonder persists beyond the revelation.
