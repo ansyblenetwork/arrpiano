@@ -14,7 +14,7 @@ So let's look at the notes of music. Why are there twelve notes in Western and m
 
 
 
-In the spirit of my [recent commentary]() on taking a systematic approach, we first observe that this question can be decomposed into two:
+In the spirit of my [recent commentary]({% post_url 2021-05-19-our-mutual-friend %}) on taking a systematic approach, we first observe that this question can be decomposed into two:
 
 1. Why are there not more than twelve notes?
 2. Why are there not fewer than twelve notes?
