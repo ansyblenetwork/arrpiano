@@ -1,5 +1,5 @@
 ---
-title: "Music our mutual friend"
+title: "Music, our mutual friend"
 ---
 
 I think music has a special mystery, particularly to those who have studied some mathematics in college. In an interview with Krista Tippett for the podcast _On Being_, Professor Chazelle briefly described how Bach created something different:
