@@ -2,7 +2,7 @@
 title: "The twelve notes of music"
 ---
 
-Today's quote of the day comes from Richard Feynman:
+Today's quote comes from Richard Feynman:
 
 >All the kids were playing in the field and one kid said to me, “See that bird, what kind of a bird is that?” And I said, “I haven’t the slightest idea what kind of a bird it is.” He says, “It’s a brown-throated thrush,” or something, “Your father doesn’t tell you anything.”
 >
