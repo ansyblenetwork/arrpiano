@@ -21,7 +21,6 @@
 	
 <body>	
 	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="S4tJ3X3o"></script>
 	
 	<div id="outersidebar" class="outersidebar">
 	<div class="sidebar">
@@ -34,9 +33,11 @@
 				</div>
 			</span>
 		</div>
-						
-		<ul class="ulsidebar" id="postlist" style="overflow:auto;">
-			{% for post in site.posts %}					
+			
+		<div id="shadow" style="display:none; inset:0px; pointer-events:none; position:absolute; box-shadow: inset 0px 40px 15px -50px #333"></div>	
+		<ul class="ulsidebar" id="postlist" style="overflow:auto;" onscroll="if (this.scrollTop > 5) this.previousElementSibling.style.display = 'block';
+											else this.previousElementSibling.style.display = 'none';">
+			{% for post in site.posts reversed %}					
 				{% if page.title == post.title %}	
 					<li id="specialPost" style="background-color:#f4f7f7"><span class="date-format">{{ post.date | date: "%B %-d, %Y" }}</span><br>
 						{{ post.title }}</li>
@@ -45,7 +46,7 @@
 						{{ post.title }}</li></a>				
 				{% endif %}
 			{% endfor %}
-			<br>
+			<li style="height:200px"></li>
 		</ul>
 	</div>
 	<div class="sidebartab"></div>
@@ -62,14 +63,26 @@
 			{{ content }}	
 		</div>
 		
+		<button onclick="loadComments(this)" style="margin-left: auto; margin-right:auto; display:block;">Load Comments</button>
 		<div id="comment"></div>
+		<div style="height:150px"></div>
 	</div>	
 	
 </body>	
 
 <script>
 // facebook comments
-D('comment').outerHTML = `<div id="comment" class="fb-comments" data-href="${window.location.href}" data-width="100%" data-numposts="10"></div>`;
+function loadComments(elt) {
+	D('comment').outerHTML = `<div id="comment" class="fb-comments" data-href="${window.location.href}" data-width="100%" data-numposts="10"></div>`;	
+	
+	var tag = make('script');
+	tag.crossOrigin = "anonymous";
+	tag.nonce = "S4tJ3X3o";
+	tag.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	tag.onload = function() {hide(elt);};
+}
 
 // add base URL to relative links (for project pages)
 var relativelinks = document.getElementsByTagName("a");
@@ -168,6 +181,9 @@ for (let i = 0; i < list.length; i++) {
 	}
 }
 	
+	
+D('shadow').style.top = (D('shadow').previousElementSibling.offsetHeight + 60) + "px";
+		
 function D(string) { return document.getElementById(string); }	
 function DE(id) {
 	if (typeof id === 'string' || id instanceof String) return D(id);
