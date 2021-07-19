@@ -38,9 +38,7 @@ iframe {
     max-width:640px;
 	
     max-height:60%;	
-    margin-left: auto;
-    margin-right: auto;  
-    margin-top:16px;
+    margin:25px auto;
     pointer-events: none;
 }
 
@@ -123,11 +121,10 @@ input[type=number] {
 .sidebar li {
   /*margin-bottom:10px;*/
   padding:10px;
-  /* border-bottom: solid 1px #d4d4d4; */
 }
 
 .sidebar a:hover {
-    color: #999 !important;
+    color: #588 !important;
 }
 
 .rpanel {  
@@ -259,7 +256,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #888;
+    color: #699;
 }
 
 a:hover {
@@ -281,11 +278,11 @@ h2 a {
 }
 
 h1 a:hover {
-    color: #888;
+    color: #588;
 }
 
 h2 a:hover {
-    color: #888;
+    color: #588;
 }
 
 /* width */
@@ -367,6 +364,7 @@ ul::-webkit-scrollbar-thumb:hover {
     box-shadow: #d4d4d4 0px 0px 7px; 
     background-color: white;
     pointer-events:auto;
+	  position:relative;
   }
     
     .sidebartab {
