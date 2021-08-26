@@ -2,6 +2,48 @@
   --fixWidth: 0px;
 }
 
+
+button:disabled,
+button[disabled]{
+	color:#aaa;
+	cursor:initial;
+}
+
+.libold:hover {
+	font-weight:bold;
+}
+input[type=text], input[type=password] {  
+  box-sizing: border-box;
+  padding: 5px;
+  border-top: solid 0px;
+  border-left: solid 0px;
+  border-right: solid 0px;
+  border-bottom: solid 1px;
+}
+
+input[type=text]:focus, input[type=password]:focus {  
+  border-bottom: solid 2px;
+  padding-bottom: 4px;
+  outline: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #000000;
+	margin: 30px auto;
+}
+
+th{
+    border:1px solid #000000;
+	padding:5px;
+}
+
+td{
+    border:1px solid #000000;
+	padding:5px;
+}
+
 .fb-comments {
 	margin:auto;
 	margin-bottom:30px;
@@ -168,7 +210,7 @@ input[type=number] {
 }
 
 blockquote {
-  margin:10px 0px 10px 0px;
+  margin:10px;
   padding:1px 10px 1px 10px;
   border-radius: 10px;
   background-color: #f4f7f7;
@@ -203,9 +245,12 @@ button {
   cursor: pointer;
 }
 
+button.active {
+  background-color: #b4b7b7;	
+}
 
 button:hover:enabled {  
-  background-color: white;  
+  background-color: #d4d7d7;
 }
 
 h1 {     
